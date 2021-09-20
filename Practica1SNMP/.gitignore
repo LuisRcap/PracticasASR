@@ -1,0 +1,5 @@
+#Archivos que se ignoran del programa
+/venv
+traficoRED*.png
+*.pdf
+agentes.txt
