@@ -1,4 +1,4 @@
-#Práctica 1 ASR Protocolo SNMP
+# Práctica 1 ASR Protocolo SNMP
 
 Esta parte contiene los archivos necesarios para hacer funcionar el monitoreo
 con de diferentes agentes añadiéndolos con un script hecho en python incluido
