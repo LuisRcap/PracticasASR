@@ -81,7 +81,7 @@ def remove_agente(host, comunidad):
             else:
                 f.write("\n" + contenido[i])
             listaAgentes[i].id = i+1
-            contId = i+1
+            contId = i+2
 
 
 def getReporte(agente, tiempo_inicio, tiempo_fin):
@@ -129,7 +129,7 @@ if archivoExiste:
     for i in range(len(contenido)):
         [host, snmp_v, comunidad, puerto] = contenido[i].split()
         listaAgentes.append(Agente(host, snmp_v, comunidad, puerto, (i + 1)))
-        contId = i + 1
+        contId = i + 2
     for agente in listaAgentes:
         if agente.sistema != "Ninguno":
             print(agente.id, "Host: " + agente.host + " Estado: Up")
@@ -146,6 +146,7 @@ else:
     print("Aún no existen agentes")
 
 while True:
+    opcion = 0
     opcion = int(input(
         "Indique la acción que quiere hacer:\n1. Agregar agente\n2. Eliminar agente\n3. Enlistar agentes activos\n4. Obtener reporte \nPresione cualquier otro para cerrar el programa\n"))
 

@@ -14,11 +14,11 @@ class Agente:
         self.sistema = "linux"
         self.id = id
         self.getSistema()
-        self.nombre = consultaSNMP(self.comunidad, self.host, "1.3.6.1.2.1.1.5.0", self.snmp_v, self.puerto)
-        self.ubicacion = consultaSNMP(self.comunidad, self.host, "1.3.6.1.2.1.1.6.0", self.snmp_v, self.puerto)
-        self.tiempo = time.ctime(int(consultaSNMP(self.comunidad, self.host, "1.3.6.1.2.1.1.3.0", self.snmp_v, self.puerto)))
         if self.sistema != "Ninguno":
             crear_rrd(self.id)
+            self.nombre = consultaSNMP(self.comunidad, self.host, "1.3.6.1.2.1.1.5.0", self.snmp_v, self.puerto)
+            self.ubicacion = consultaSNMP(self.comunidad, self.host, "1.3.6.1.2.1.1.6.0", self.snmp_v, self.puerto)
+            self.tiempo = time.ctime(int(consultaSNMP(self.comunidad, self.host, "1.3.6.1.2.1.1.3.0", self.snmp_v, self.puerto)))
         self.t = threading.Thread(target=self.startMonitoreo)
         self.t.start()
 
