@@ -1,0 +1,2 @@
+#logo{background-color:#202020;color:#fff;justify-content:space-evenly;position:relative;width:100%}#logo,form{display:grid}form{grid-gap:5px;grid-template-columns:1fr;padding:10%}#content input[type=number],#content input[type=text]{border:2px solid #ccc;border-radius:5px;font-size:20px;height:30px;padding-left:10px;width:80%}body{margin:0;padding:0}#content{display:grid;grid-template-columns:2fr 1fr;margin-top:0;width:100%}
+/*# sourceMappingURL=main.6b263aec.css.map*/
