@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ebb04d98.css",
+    "main.js": "/static/js/main.967038a6.js",
+    "static/media/kia-homepage.png": "/static/media/kia-homepage.b93dc851dd32269ad2d6.png",
+    "index.html": "/index.html",
+    "main.ebb04d98.css.map": "/static/css/main.ebb04d98.css.map",
+    "main.967038a6.js.map": "/static/js/main.967038a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebb04d98.css",
+    "static/js/main.967038a6.js"
+  ]
+}
